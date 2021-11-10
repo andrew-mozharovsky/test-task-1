@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facil-Avo</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="content-container">
-        <img class="logo" src="./" alt="logo" width="187" height="127" />
+        <img class="logo" src="./images/logo.png" alt="logo" width="187" height="127" />
         <h1 class="hero">
           Programme d'apprentissage à l’auto-injection d’AVONEX®
         </h1>
@@ -18,130 +24,138 @@
 
     <section class="about">
       <div class="content-container">
-        <h2>Facil’ Avo c’est :</h2>
-        <ul>
-          <li>
-            <img src="#" alt="pen" width="43" height="43" />
-            <p>Une à plusieurs séances individuelles de formation avec des i</p>
+        <h2 class="about-title">Facil’ Avo c’est :</h2>
+        <ul class="about-list">
+          <li class="about-list-item">
+            <img class="about-image" src="./images/pen.png" alt="pen" width="43"  />
+            <p class="about-list-item-content">Une à plusieurs séances individuelles de formation avec des infirmiers spécialisés.</p>
           </li>
-          <li>
-            <img src="#" alt="coment" width="43" height="43" />
-            <p>Un suivi téléphonique la première année de leur traitement.</p>
+          <li class="about-list-item">
+            <img class="about-image" src="./images/comment.png" alt="comment" width="43"  />
+            <p class="about-list-item-content">Un suivi téléphonique la première année de leur traitement.</p>
           </li>
-          <li>
-            <img src="#" alt="phone" width="43" height="43" />
-            <p>Un numéro vert dédié disponible 7j/7 et 24h/24.</p>
+          <li class="about-list-item">
+            <img class="about-image" src="./images/phone.png" alt="phone" width="43"  />
+            <p class="about-list-item-content">Un numéro vert dédié disponible 7j/7 et 24h/24.</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <div class="practice">
+    <section class="practice">
       <div class="content-container">
-        <img src="#" alt="scheme" />
-        <a href="#"> Télécharger la brochure professionnels de santé </a>
-        <img src="#" alt="lamp" />
-        <p>En cas de Titration : Penser à remettre au patient une ordonnan</p>
-        <p>* Les injections sont réalisées par un infirmier indépendamment</p>
+        <h2 class="practice-title">En pratique</h2>
+        <div class="scheme-image-wrapper">
+          <img class="practice-scheme-image" src="./images/practice-mobile.png" alt="practice-scheme" />
+        </div>        
+        <a class="practice-link" href="#"> Télécharger la brochure professionnels de santé </a>
+        <img class="practice-lamp-image" src="./images/lamp.png" alt="lamp" />
+        <p class="practice-content"><span class="practice-content-accent">En cas de Titration :</span> Penser à remettre au patient une ordonnance d’actes infirmiers pour la réalisation
+        des injections pendant la période d’adaptation de la posologie.</p>
+        <p class="practice-content practice-content-small">* Les injections sont réalisées par un infirmier indépendamment du programme Facil’Avo. À noter qu’en cas de titration
+        par pallier d’ ¼ de dose, l’appel 3 jours après l’apprentissage survient en même temps que l’appel à 1 mois après
+        l’initiation du traitement.</p>
       </div>
-    </div>
+    </section>
 
     <section class="comment">
       <div class="content-container">
-        <h2>Comment inscrire vos patients ?</h2>
-        <ul>
-          <li>
-            <img src="#" alt="comment" />
-            <p>Présenter le programme à vos patients sous AVONEX®</p>
+        <h2 class="comment-title">Comment inscrire vos patients ?</h2>
+        <ul class="comment-list">
+          <li class="comment-list-item">
+            <img class="comment-list-image" src="./images/comment.png" alt="comment" width="45" />
+            <p class="comment-list-item-content">Présenter le programme à vos patients sous AVONEX®</p>
           </li>
-          <li>
-            <img src="#" alt="note" />
-            <p>Compléter ensemble le formulaire d'inscription</p>
+          <li class="comment-list-item">
+            <img class="comment-list-image" src="./images/note.png" alt="note" width="45" />
+            <p class="comment-list-item-content">Compléter ensemble le formulaire d'inscription</p>
           </li>
-          <li>
-            <img src="#" alt="mail" />
-            <p>
+          <li class="comment-list-item">
+            <img class="comment-list-image" src="./images/mail.png" alt="mail" width="45" />
+            <p class="comment-list-item-content">
               Envoyer à Patientys le formulaire d’inscription par Fax au
-              0170959874
+              <span class="comment-list-item-content-accent">01 70 95 98 74</span>
             </p>
           </li>
         </ul>
 
-        <a href="#">Télécharger un formulaire d'inscription </a>
-        <a href="#">Télécharger la brochure patient </a>
+        <a class="comment-link" href="#">Télécharger un formulaire d'inscription </a>
+        <a class="comment-link" href="#">Télécharger la brochure patient </a>
       </div>
     </section>
 
     <div class="pochtte">
       <div class="content-container">
-        <p>
+        <p class="pochtte-content">
           Si vous souhaitez recevoir une pochette contenant des formulaires
           d’inscription vous pouvez nous les demander en cliquant sur le lien
           suivant :
         </p>
-        <a href="#">Recevoir une pochette </a>
-      </div>
-      <div class="image"></div>
+        <a class="pochtte-link" href="#">Recevoir une pochette </a>
+      </div>      
+    </div>
+    <div class="image-wrapper">
+      <img class="image" src="./images/bg-image.png" alt="">
     </div>
 
     <div class="contacts">
       <div class="content-container">
-        <p>
+        <p class="contacts-content">
           Pour toutes vos questions, un numéro vert est dédié au programme
           Facil’ Avo 7j/7 et 24h/24
         </p>
-        <div>
-          <img src="#" alt="phone" />
+        <a class="contacts-link" href="">
+          <img src="./images/phone.png" alt="phone" />
           <p>0800 940 375</p>
-        </div>
+        </a>
       </div>
     </div>
 
     <section class="extranet">
       <div class="content-container">
-        <h2>
+        <h2 class="extranet-title">
           Un extranet sécurisé pour accéder à l’ensemble des comptes rendus
         </h2>
-        <ul>
-          <li>Accédez au tableau de bord de vos patients</li>
-          <li>Suivez le parcours de formation de vos patients</li>
-          <li>Consultez les comptes rendus d’apprentissage et de suivi</li>
+        <ul class="extranet-list">
+          <li class="extranet-list-item">Accédez au tableau de bord de vos patients</li>
+          <li class="extranet-list-item">Suivez le parcours de formation de vos patients</li>
+          <li class="extranet-list-item">Consultez les comptes rendus d’apprentissage et de suivi</li>
         </ul>
       </div>
     </section>
 
     <section class="resposabilite">
       <div class="content-container">
-        <h2>Responsabilités et confidentialité des données</h2>
-        <ul>
-          <li>
+        <h2 class="resposabilite-title">Responsabilités et confidentialité des données</h2>
+        <ul class="resposabilite-list">
+          <li class="resposabilite-list-item">
             La participation au programme Facil’ Avo est libre et gratuite.
           </li>
-          <li>
+          <li class="resposabilite-list-item">
             Le neurologue reste le seul responsable du traitement du patient.
           </li>
-          <li>
+          <li class="resposabilite-list-item">
             Les données sont hébergées par un hébergeur agréé par le ministère
             de la santé.
           </li>
-          <li>
+          <li class="resposabilite-list-item">
             Aucune donnée personnelle ne sera transmise à Biogen France SAS.
           </li>
-          <li>Patientys agit comme Tiers de confiance.</li>
+          <li class="resposabilite-list-item">Patientys agit comme Tiers de confiance.</li>
         </ul>
-        <a href="#">Confidentialité et protection des données</a>
+        <a class="resposabilite-link" href="#">Confidentialité et protection des données</a>
       </div>
     </section>
 
-    <footer>
+    <footer class="footer">
       <div class="content-container">
-        <img src="#" alt="" />
-        <img src="#" alt="" />
-        <ul>
-          <li><a href="">Conditions générales d'utilisation</a></li>
-          <li><a href="">Politique de confidentialité</a></li>
-          <li><a href="">Cookies </a></li>
-          <li><a href="">2018/11-BI-FR-0677</a></li>
+        <img class="footer-logo" src="./images/patientys-logo.png" alt="" />
+        <img class="footer-logo" src="./images/biogen-logo.png" alt="" />
+        <ul class="footer-list">
+          <li class="footer-list-item"><a class="footer-list-item-link" href="#">Conditions générales d'utilisation</a></li>
+          <li class="footer-list-item"><a class="footer-list-item-link" href="#">Politique de confidentialité</a></li>
+          <li class="footer-list-item"><a class="footer-list-item-link" href="#">Cookies </a></li>
+          <li class="footer-list-item"><p>2018/11-BI-FR-0677</p></li>
         </ul>
       </div>
     </footer>
